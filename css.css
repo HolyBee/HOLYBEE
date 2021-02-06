@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 
-/* the main crap */
+/* the main crap  for me*/
 
 body{
    background-image:url("image/wood.png"),url("image/big.png");
@@ -1213,7 +1213,7 @@ body{
    .navbar {
      font-size:0.65em;
      height:6.55%;
-     max-width:360px;
+     max-width:375px;
    }
    .center img{
        width:8.5%;
