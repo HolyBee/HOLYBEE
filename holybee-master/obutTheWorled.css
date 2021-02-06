@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+
+/* the main crap */
+
+body{
+   background-image:url("image/longaswood28.jpeg");
+   background-position: center top;
+   background-repeat:repeat-y;
+   background-size: 100% auto;
+   overflow: auto;
+   overflow-x: hidden;
+   margin: 0;
+ }
+
+ html{
+   scroll-behavior: smooth;
+ }
+
+ * {
+  box-sizing: border-box;
+}
+
+
+.popUpP{
+  position:absolute;
+  width:50%;
+  height:auto;
+  top:15%;
+  left:26%;
+}
+
+.popUpM img{
+  position:absolute;
+  width:20%;
+  height:auto;
+  top:85%;
+  left:40%;
+}
+
+
+.navbar {
+       background-color: rgb(255, 255, 255);
+       position: fixed;
+       text-align: center;
+       top: 0;
+       font-size:2em;
+       width: 100%;
+       height:10%;
+}
+
+.navbarB{
+       overflow: hidden;
+       background-color: rgb(255, 255, 255);
+       position:absolute;
+       text-align: center;
+       top: 100%;
+       width: 100%;
+       height:10%;
+}
+
+/* nav lenad */
+
+.topnav{
+  position: absolute;
+  width:14.4%;
+  height:auto;
+  margin-right: -106.5px;
+  margin-top:-5px;
+}
+
+
+.center img{
+    position: absolute;
+    width:10%;
+    height:auto;
+    margin-right: -47px;
+    margin-top:-5px;
+}
+
+.center2 img{
+    position: absolute;
+    width:10.5%;
+    height:auto;
+    right:300px;
+    top:-5px;
+}
+
+.rightB img{
+  float:right;
+  display: block;
+  margin-right:7%;
+  width:7.5%;
+  height:auto;
+  margin-top:-22px;
+}
+
+.centerB img{
+  width:7.5%;
+  height:auto;
+  margin-top:-22px;
+}
+
+.leftB img{
+  float:left;
+  display: block;
+  margin-left:7%;
+  width:7.5%;
+  height:auto;
+  margin-top:-22px;
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+  .navbarB{
+    top:95%;
+    height:5%;
+  }
+  .leftB img{
+       width:8.5%;
+       margin-top:-0px;
+  }
+  .rightB img{
+       width:8.5%;
+       margin-top:-0px;
+  }
+
+  .center img{
+    width:7%;
+    margin-top:-6.6px;
+ }
+   .navbar {
+     font-size:1em;
+     height:4%;
+}
+}
+
+@media screen and (max-width: 450px) {
+  .navbarB{
+    top:95%;
+    height:5%;
+  }
+  .leftB img{
+       width:8.5%;
+       margin-top:-0px;
+  }
+  .rightB img{
+       width:8.5%;
+       margin-top:-0px;
+  }
+
+   .navbar {
+     font-size:0.75em;
+     height:3.5%;
+   }
+   .center img{
+     width:6.5%;
+     margin-top:-2px;
+}
+}
+
+@media screen and (max-width: 375px) {
+  .navbarB{
+    top:95%;
+    height:6%;
+  }
+  .leftB img{
+       width:8.5%;
+       margin-top:-0px;
+  }
+  .rightB img{
+       width:8.5%;
+       margin-top:-0px;
+  }
+  .center img{
+    width:10.5%;
+    margin-top:-0px;
+}
+   .navbar {
+     font-size:0.5em;
+     height:3%;
+   }
+   .center img{
+       width:6.5%;
+  }
+}
+
+
+@media only screen and (max-width:1920px)and (min-width:1620px) {
+  .navbar {
+    font-size:2.5em;
+    height:10%;
+  }
+  .center img{
+      width:7.7%;
+}
+ .navbarB{
+   top:100%;
+   height:8%;
+ }
+ .leftB img{
+   width:10%;
+   margin-top:-25px;
+ }
+ .rightB img{
+      width:7%;
+      margin-top:-25px;
+ }
+}
