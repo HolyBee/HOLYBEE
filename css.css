@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 
-/* the main crap  for me*/
+/* the main crap */
 
 body{
    background-image:url("image/wood.png"),url("image/big.png");
@@ -11,15 +11,28 @@ body{
    background-size: 100% auto,100% 400%;
    margin: 0;
    overflow-x: hidden;
-   -moz-box-sizing: border-box;
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
  }
  * {
   box-sizing: border-box;
 }
 
+
+
 /* div */
+.mobileDevice{
+  display: none;
+}
+.pcDevice{
+  display: block;
+}
+.discord{
+  text-align: center;
+  top:14%;
+  color: rgb(255, 255, 255);
+  margin:0px;
+  padding:0px;
+  border: 0px;
+}
 
 .navbar {
        background-color: rgb(255, 255, 255);
@@ -29,21 +42,18 @@ body{
        font-size:2em;
        width: 100%;
        height:10%;
-}
-.mobileDevice{
-  display: none;
-}
-.pcDevice{
-  display: block;
+
 }
 
-.center2 img{
-    position: absolute;
-    width:10.5%;
-    height:auto;
-    right:300px;
-    top:-5px;
+.dropbtn {
+  background-color:#edc009;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
 }
+
 .dropdown {
   margin-left:1450px;
   position: relative;
@@ -72,15 +82,6 @@ body{
 
 }
 
-.dropbtn {
-  background-color:#edc009;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
 .dropdown-content a:hover {background-color: #f1f1f1}
 
 .dropdown:hover .dropdown-content {
@@ -91,25 +92,17 @@ body{
   background-color: #edc009;
 }
 
-
-
-.discord{
-  text-align: center;
-  top:14%;
-  color: rgb(255, 255, 255);
-  margin:0px;
-  padding:0px;
-  border: 0px;
-}
 .navbarB{
        overflow: hidden;
        background-color: rgb(255, 255, 255);
        position:absolute;
        text-align: center;
-       top:630%;
+       top: 1000%;
        width: 100%;
        height:10%;
 }
+
+
 
 /* class */
 
@@ -175,42 +168,45 @@ body{
   left:78%;
 }
 
-/* גלריה */
 
+
+/* גלריה */
 
 .gallery{
   position:absolute;
-
   top:350%;
   width:100%;
   height:101%;
   left: 2.5%;
-  overflow: hidden;
 }
-
-.image-box {
-    float: left;
-    margin: 20px;
-    position: relative;
-    margin: auto;
-    overflow: hidden;
-    width: 450px;
-    height:450px;
-}
-.image-box img {
-    overflow: hidden;
-    object-fit: cover;
-    max-width: 100%;
-    transition: all 0.3s;
+.img-wrapper {
     display:inline-block;
-    width: 100%;
-    height: 100%;
-    transform: scale(1);
+    overflow: hidden;
 }
 
-.image-box:hover img {
-    transform: scale(1.5);
+
+
+.img-wrapper img {
+  object-fit: cover;
+  width:400px;
+  height:400px;
+  margin:10px;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+
 }
+
+.img-wrapper img:hover {
+    -webkit-transform:scale(1.5); /* Safari and Chrome */
+    -moz-transform:scale(1.5); /* Firefox */
+    -ms-transform:scale(1.5); /* IE 9 */
+    -o-transform:scale(1.5); /* Opera */
+    transform:scale(1.5);
+}
+
 .leftIMa{
   margin:30px;
   width:30%;
@@ -257,6 +253,7 @@ body{
 }
 
 
+
 /* simpole text */
 
 .Hex{
@@ -278,27 +275,43 @@ body{
 
 .exploin{
   position: absolute;
-  top:500%;
+  top:810%;
   text-align: center;
   right: 2.5%;
-  font-size:3em;
+  font-size:1em;
   color: rgb(71, 46, 46);
   font-family: 'Assistant', sans-serif;
 
 }
 
+
+
 /* nav lenad */
+
+.topnav{
+  position: absolute;
+  width:14.4%;
+  height:auto;
+  margin-right: -106.5px;
+  margin-top:-5px;
+}
 
 
 .center img{
     position: absolute;
-    width:7.5%;
+    width:10%;
     height:auto;
-    margin-right: -20px;
-    margin-top:-15px;
+    margin-right: -47px;
+    margin-top:-5px;
 }
 
-
+.center2 img{
+    position: absolute;
+    width:10.5%;
+    height:auto;
+    right:300px;
+    top:-5px;
+}
 
 .rightB img{
   float:right;
@@ -335,7 +348,7 @@ body{
   position:absolute;
   width:40%;
   height:auto;
-  top:480%;
+  top:800%;
   left:31%;
 }
 
@@ -371,7 +384,7 @@ body{
   position:absolute;
   width:45%;
   height:auto;
-  top:460%;
+  top:760%;
   left:18%;
 }
 /* strip */
@@ -499,78 +512,6 @@ body{
 
 /* @media */
 @media screen and (max-width: 850px) {
-  .popUpM{
-    display: block;
-    width:32%;
-    top:90%;
-    left:35%;
-  }
-  .popUpM img{
-    width: 100%;
-  }
-  .Pawn{
-    width:27%;
-    top:48%;
-    left:37.5%;
-  }
-
-  .Pawn2,.Pawn3{
-    width:26%;
-    top:50%;
-  }
-  .Pawn2{
-    left:73.5%;
-  }
-  .Pawn3{
-    left:3.5%;
-  }
-  .text13,.text14,.text15{
-    top:72.5%;
-    font-size:2.5em;
-  }
-  .text13{
-    left:9%;
-  }
-
-  .text14{
-    left:45%;
-  }
-  .text15{
-    left:79%;
-  }
-
-  .text23,.text24,.text25{
-    top:76.5%;
-    font-size:2.25em;
-  }
-  .text23{
-    left:11%;
-  }
-  .text24{
-    left:44.5%;
-  }
-  .text25{
-    left:79%;
-  }
-  .image-box {
-      float: left;
-      margin: 20px;
-      position: relative;
-      margin: auto;
-      overflow: hidden;
-      width: 250px;
-      height:250px;
-  }
-  .image-box img {
-      overflow: hidden;
-      object-fit: cover;
-      max-width: 100%;
-      transition: all 0.3s;
-      display:inline-block;
-      width: 100%;
-      height: 100%;
-      transform: scale(1);
-  }
   .img-wrapper img {
     object-fit: cover;
     width:200px;
@@ -626,7 +567,7 @@ body{
     height:25%;
   }
   @keyframes move {
-    0% {  top:100.6%;left:5%;}
+    0% {  top:100.6%;left:-5%;}
     10% {  top:105%;left:5%; }
     20% {  top:108%;left:15%; }
     30% {  top:115%;left:33%;}
@@ -639,7 +580,7 @@ body{
     100% { top:116%;left:110%;}
   }
   @keyframes move2{
-    0% {  top:100.6%;left:5%;}
+    0% {  top:100.6%;left:-5%;}
     10% {  top:105%;left:5%; }
     20% {  top:108%;left:15%; }
     30% {  top:115%;left:33%;}
@@ -652,7 +593,7 @@ body{
     100% { top:116%;left:110%;}
   }
   @keyframes move3{
-    0% {  top:100.6%;left:5%;}
+    0% {  top:100.6%;left:-5%;}
     10% {  top:105%;left:5%; }
     20% {  top:108%;left:15%; }
     30% {  top:115%;left:33%;}
@@ -678,18 +619,13 @@ body{
     left:6.5%;
   }
   .navbarB{
-    top:325%;
+    top:260%;
     height:5%;
   }
   .center img{
     width:7%;
     margin-top:-6.6px;
  }
- .center2 img{
-   margin-top:0px;
-   width:10.5%;
-   right:700px;
-}
  .popUpG2{
    display: block;
    width:25%;
@@ -720,10 +656,19 @@ body{
   .popUpP{
     top:40%;
   }
+
+  .popUpM{
+    display: block;
+    width:32%;
+    top:80%;
+    left:35%;
+  }
+  .popUpM img{
+    width: 100%;
+  }
    .navbar {
      font-size:1em;
-     height:6%;
-     max-width: 810px;
+     height:4%;
    }
    .discord{
      top:5%;
@@ -737,25 +682,6 @@ body{
    }
 }
 @media screen and (max-width: 450px) {
-  .image-box {
-      float: left;
-      margin: 20px;
-      position: relative;
-      margin: auto;
-      overflow: hidden;
-      width: 100px;
-      height:100px;
-  }
-  .image-box img {
-      overflow: hidden;
-      object-fit: cover;
-      max-width: 100%;
-      transition: all 0.3s;
-      display:inline-block;
-      width: 100%;
-      height: 100%;
-      transform: scale(1);
-  }
   .img-wrapper img {
     width:150px;
     height:150px;
@@ -858,7 +784,7 @@ body{
     height:20%;
   }
   @keyframes move {
-    0% {  top:71.6%;left:5%;}
+    0% {  top:71.6%;left:-5%;}
     10% {  top:75%;left:5%; }
     20% {  top:78%;left:15%; }
     30% {  top:85%;left:33%;}
@@ -871,7 +797,7 @@ body{
     100% { top:76%;left:110%;}
   }
   @keyframes move2{
-    0% {  top:71.6%;left:5%;}
+    0% {  top:71.6%;left:-5%;}
     10% {  top:75%;left:5%; }
     20% {  top:78%;left:15%; }
     30% {  top:85%;left:33%;}
@@ -884,7 +810,7 @@ body{
     100% { top:76%;left:110%;}
   }
   @keyframes move3{
-    0% {  top:71.6%;left:5%;}
+    0% {  top:71.6%;left:-5%;}
     10% {  top:75%;left:5%; }
     20% {  top:78%;left:15%; }
     30% {  top:85%;left:33%;}
@@ -908,23 +834,21 @@ body{
     height:50%;
   }
   .popUpS{
-    top:148%;
-    width:70%;
-    left:15%;
+    top:198%;
   }
   .exploin{
-    top:155%;
+    top:200%;
     font-size:2em;
     left: 4%;
   }
   .navbarB{
-    top:305%;
+    top:340%;
     height:5%;
   }
   .popUpG2{
     display: block;
     width:35%;
-    top:140%;
+    top:185%;
     left:32%;
   }
   .popUpG2 img{
@@ -958,7 +882,6 @@ body{
    .navbar {
      font-size:1em;
      height:6.75%;
-     max-width: 420px;
    }
    .right{
      padding:0.2em 0.2em;
@@ -995,7 +918,6 @@ body{
   .img-wrapper img {
     width:150px;
     height:150px;
-    margin:1px;
 
   }
   .dropdown-content a {
@@ -1094,7 +1016,7 @@ body{
     height:20%;
   }
   @keyframes move {
-    0% {  top:71.6%;left:2%;}
+    0% {  top:71.6%;left:-5%;}
     10% {  top:75%;left:5%; }
     20% {  top:78%;left:15%; }
     30% {  top:85%;left:33%;}
@@ -1107,7 +1029,7 @@ body{
     100% { top:76%;left:110%;}
   }
   @keyframes move2 {
-    0% {  top:78.6%;left:2%;}
+    0% {  top:78.6%;left:-5%;}
     10% {  top:79%;left:5%; }
     20% {  top:75%;left:15%; }
     30% {  top:79%;left:33%;}
@@ -1120,7 +1042,7 @@ body{
     100% { top:79%;left:110%;}
   }
   @keyframes move3 {
-    0% {  top:71.6%;left:2%;}
+    0% {  top:71.6%;left:-5%;}
     10% {  top:75%;left:5%; }
     20% {  top:78%;left:15%; }
     30% {  top:85%;left:33%;}
@@ -1213,14 +1135,13 @@ body{
    .navbar {
      font-size:0.65em;
      height:6.55%;
-     max-width:375px;
    }
    .center img{
        width:8.5%;
   }
   .center2 img{
       width:13.5%;
-      right:270px;
+      right: 320px;
  }
    .discord{
      top:2.5%;
@@ -1336,7 +1257,7 @@ body{
     height:20%;
   }
   @keyframes move {
-    0% {  top:71.6%;left:5%;}
+    0% {  top:71.6%;left:-5%;}
     10% {  top:75%;left:5%; }
     20% {  top:78%;left:15%; }
     30% {  top:85%;left:33%;}
@@ -1349,7 +1270,7 @@ body{
     100% { top:76%;left:110%;}
   }
   @keyframes move2 {
-    0% {  top:78.6%;left:5%;}
+    0% {  top:78.6%;left:-5%;}
     10% {  top:79%;left:5%; }
     20% {  top:75%;left:15%; }
     30% {  top:79%;left:33%;}
@@ -1362,7 +1283,7 @@ body{
     100% { top:79%;left:110%;}
   }
   @keyframes move3 {
-    0% {  top:71.6%;left:5%;}
+    0% {  top:71.6%;left:-5%;}
     10% {  top:75%;left:5%; }
     20% {  top:78%;left:15%; }
     30% {  top:85%;left:33%;}
@@ -1455,7 +1376,6 @@ body{
    .navbar {
      font-size:0.65em;
      height:6.55%;
-     max-width:320px;
    }
    .center img{
        width:8.5%;
@@ -1486,12 +1406,12 @@ body{
     font-size:13.75em;
   }
   .navbar {
-    font-size:2em;
-    height:7%;
+    font-size:2.5em;
+    height:10%;
   }
   .center img{
-      width:5%;
- }
+    width:7.7%;
+}
  .TheStrip{
    height:63.3%;
  }
@@ -1505,23 +1425,23 @@ body{
    width: 100%;
  }
  .popUpS{
-   top:500%;
+   top:485%;
  }
  .exploin{
-   top:515%;
-   font-size:2em;
+   top:502%;
+   font-size:3em;
    left:0.25%;
  }
  .navbarB{
-   top:675%;
-   height:8%;
+   top:580%;
+   height:10%;
  }
  .ad{
    width:32.8%;
-   top:241%;
-   left:64%;
+   top:243%;
+   left:63.5%;
  }
  .coupP{
-   top:248.9%;
+   top:251.2%;
  }
 }
