@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
 
@@ -30,91 +31,49 @@ body{
        width: 100%;
        height:10%;
 }
-.mobileDevice{
-  display: none;
-}
-.pcDevice{
-  display: block;
-}
-
-.center2 img{
-    position: absolute;
-    width:10.5%;
-    height:auto;
-    right:300px;
-    top:-5px;
-}
-.dropdown {
-  margin-left:1450px;
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width:220px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size:1em;
-  font-family: 'Assistant', sans-serif;
-  color: #ffcc00;
-  font-weight: bold;
-  letter-spacing: 2px;
-
-}
-
-.dropbtn {
-  background-color:#edc009;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #edc009;
-}
 
 .navbarB{
        overflow: hidden;
        background-color: rgb(255, 255, 255);
        position:absolute;
        text-align: center;
-       bottom:0;
+       top: 110%;
        width: 100%;
        height:10%;
 }
 
+
 /* nav lenad */
+
+  .topnav{
+    position: absolute;
+    width:14%;
+    height:auto;
+    margin-right: -111px;
+    margin-top:0px;
+  }
+  .center img{
+    position: absolute;
+    width:10%;
+    height:auto;
+    margin-right: -52.5px;
+  }
+
+  .center2 img{
+    position: absolute;
+    width:10.5%;
+    height:auto;
+    right:300px;
+    top:-5px;
+}
+
 .rightB img{
   float:right;
   display: block;
   margin-right:7%;
   width:7.5%;
   height:auto;
-  margin-top:-15px;
-}
-
-.center img{
-    width:7.5%;
-    height:auto;
-    margin-top:-15px;
+  margin-top:-22px;
 }
 
 .leftB img{
@@ -168,15 +127,18 @@ body{
 }
 
 
-
 .exploin{
   position: absolute;
-  top:810%;
+  top:25%;
+  text-align: center;
+  font-size:4.25em;
   color: rgb(71, 46, 46);
   font-family: 'Assistant', sans-serif;
-  text-align: center;
-  right: 2.5%;
+
 }
+
+/* the pop up images */
+
 
 .popUpS{
   display: block;
@@ -194,18 +156,6 @@ body{
 
 
 @media screen and (max-width: 850px) {
-  .img-wrapper img {
-    object-fit: cover;
-    width:200px;
-    height:200px;
-    margin:10px;
-  }
-  .pcDevice{
-    display: none;
-  }
-  .mobileDevice{
-    display: block;
-  }
   .popUpS{
     top:15%;
   }
@@ -233,26 +183,10 @@ body{
    .navbar {
      font-size:1em;
      height:4%;
-     overflow: visible;
 }
 }
 
 @media screen and (max-width: 450px) {
-
-  .img-wrapper img {
-    width:150px;
-    height:150px;
-
-  }
-  .dropdown-content a {
-    font-size:2em;
-  }
-  .pcDevice{
-    display: none;
-  }
-  .mobileDevice{
-    display: block;
-  }
   .popUpS{
     top:15%;
   }
@@ -276,7 +210,6 @@ body{
    .navbar {
      font-size:0.75em;
      height:3.5%;
-     overflow: visible;
    }
    .center img{
      width:6.5%;
@@ -285,21 +218,6 @@ body{
 }
 
 @media screen and (max-width: 375px) {
-  .img-wrapper img {
-    width:150px;
-    height:150px;
-    margin:1px;
-
-  }
-  .dropdown-content a {
-    font-size:2em;
-  }
-  .pcDevice{
-    display: none;
-  }
-  .mobileDevice{
-    display: block;
-  }
   .popUpS{
     top:15%;
   }
@@ -326,7 +244,6 @@ body{
    .navbar {
      font-size:0.5em;
      height:3%;
-     overflow: visible;
    }
    .center img{
        width:6.5%;
@@ -336,22 +253,22 @@ body{
 
 @media only screen and (max-width:1920px)and (min-width:1620px) {
   .navbar {
-    font-size:2em;
-    height:7%;
+    font-size:2.5em;
+    height:10%;
   }
   .center img{
-      width:5%;
+      width:7.7%;
 }
  .popUpS{
-   top:10%;
+   top:20%;
  }
  .exploin{
    top:25%;
-   left:5%;
-   font-size:3em;
+   font-size:5em;
+   left:19.25%;
  }
  .navbarB{
-   height:8%;
+   height:10%;
  }
  .leftB img{
    width:7%;
@@ -361,4 +278,10 @@ body{
       width:7%;
       margin-top:-25px;
  }
+
+ .exploin{
+  top:40%; 
+  font-size:3em;
+  left:4%;
+}
 }
