@@ -207,6 +207,58 @@ body{
     transform:scale(1.5);
 }
 
+
+/* simpole text */
+
+.welcome{
+  font-size:3.5em;
+  font-family: 'Assistant', sans-serif;
+  margin-top:12%;
+  margin-bottom:0%;
+  padding:0px;
+  border: 0px;
+}
+
+.HolyBee{
+  font-size:9.5em;
+  font-family: 'Assistant', sans-serif;
+  margin-top:-5%;
+  padding:0px;
+  border: 0px;
+}
+
+.exploin{
+  position: absolute;
+  top:810%;
+  text-align: center;
+  right: 2.5%;
+  font-size:1em;
+  color: rgb(71, 46, 46);
+  font-family: 'Assistant', sans-serif;
+
+}
+
+
+
+/* nav */
+
+.center img{
+  position: absolute;
+  width:10%;
+  height:auto;
+  margin-right: -47px;
+  margin-top:-5px;
+}
+
+
+.topnav img{
+position: absolute;
+width:13.6%;
+height:auto;
+margin-right:-5.3%;
+}
+
+
 .leftIMa{
   margin:30px;
   width:30%;
@@ -251,74 +303,7 @@ body{
   margin-right:7%;
   font-weight: bold;
 }
-
-
-
-/* simpole text */
-
-.welcome{
-  font-size:3.5em;
-  font-family: 'Assistant', sans-serif;
-  margin-top:12%;
-  margin-bottom:0%;
-  padding:0px;
-  border: 0px;
-}
-
-.HolyBee{
-  font-size:9.5em;
-  font-family: 'Assistant', sans-serif;
-  margin-top:-5%;
-  padding:0px;
-  border: 0px;
-}
-
-.exploin{
-  position: absolute;
-  top:810%;
-  text-align: center;
-  right: 2.5%;
-  font-size:1em;
-  color: rgb(71, 46, 46);
-  font-family: 'Assistant', sans-serif;
-
-}
-
-
-
-/* nav lenad */
-
-.center img{
-    position: absolute;
-    width:10%;
-    height:auto;
-    margin-right: -47px;
-    margin-top:-5px;
-}
-
-.center2 img{
-    position: absolute;
-    width:10.5%;
-    height:auto;
-    right:300px;
-    top:-5px;
-}
-
-.rightB img{
-  float:right;
-  display: block;
-  margin-right:7%;
-  width:7.5%;
-  height:auto;
-  margin-top:-22px;
-}
-
-.centerB img{
-  width:7.5%;
-  height:auto;
-  margin-top:-22px;
-}
-
+/* B nav */
 .leftB img{
   float:left;
   display: block;
@@ -326,15 +311,22 @@ body{
   width:7.5%;
   height:auto;
   margin-top:-22px;
-}
-
-.topnav{
-  position: absolute;
-  width:1%;
+  }
+  
+.rightB img{
+  float:right;
+  display: block;
+  margin-right:7%;
+  width:7.5%;
   height:auto;
-  margin-right: 6%;
-  margin-top:5px;
-}
+  margin-top:-22px;
+  }
+  
+  .centerB img{
+  width:7.5%;
+  height:auto;
+  margin-top:-22px;
+  }
 
 
 
