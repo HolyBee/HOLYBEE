@@ -323,9 +323,9 @@ margin-right:-5.3%;
   }
   
   .centerB img{
-  width:7.5%;
+  width:4%;
   height:auto;
-  margin-top:-22px;
+  margin-top:10px;
   }
 
 
@@ -676,22 +676,23 @@ margin-right:-5.3%;
     float:right;
     display: block;
     margin-right:7%;
-    width:9.5%;
+    width:10%;
     height:auto;
-    margin-top:-15px;
+    margin-top:-px;
   }
 
   .centerB img{
-    width:9.5%;
+    width:6%;
     height:auto;
-    margin-top:-15px;
+    margin-left:-15%;
+    margin-top:2px;
   }
 
   .leftB img{
     float:left;
     display: block;
-    margin-left:7%;
-    width:9.5%;
+    margin-left:5%;
+    width:10%;
     height:auto;
     margin-top:-15px;
   }
@@ -700,61 +701,28 @@ margin-right:-5.3%;
     width:30%;
     height:25%;
   }
-  @keyframes move {
-    0% {  top:100.6%;left:5%;}
-    10% {  top:105%;left:5%; }
-    20% {  top:108%;left:15%; }
-    30% {  top:115%;left:33%;}
-    40% {  top:114%;left:45%;}
-    50% {  top:101%;;left:60%;}
-    60% {  top:102%;left:70%;}
-    70% {  top:116%;left:80%;}
-    80% {  top:116%;left:90%;}
-    90% {  top:116%;left:100%;}
-    100% { top:116%;left:110%;}
-  }
-  @keyframes move2{
-    0% {  top:100.6%;left:5%;}
-    10% {  top:105%;left:5%; }
-    20% {  top:108%;left:15%; }
-    30% {  top:115%;left:33%;}
-    40% {  top:114%;left:45%;}
-    50% {  top:101%;;left:60%;}
-    60% {  top:102%;left:70%;}
-    70% {  top:116%;left:80%;}
-    80% {  top:116%;left:90%;}
-    90% {  top:116%;left:100%;}
-    100% { top:116%;left:110%;}
-  }
-  @keyframes move3{
-    0% {  top:100.6%;left:5%;}
-    10% {  top:105%;left:5%; }
-    20% {  top:108%;left:15%; }
-    30% {  top:115%;left:33%;}
-    40% {  top:114%;left:45%;}
-    50% {  top:101%;;left:60%;}
-    60% {  top:102%;left:70%;}
-    70% {  top:116%;left:80%;}
-    80% {  top:116%;left:90%;}
-    90% {  top:116%;left:100%;}
-    100% { top:116%;left:110%;}
-  }
+.popUpS{
+  top: 235%;
+left: 18%;
+}
+
   .gallery{
-    top:147%;
-    width: 100%;
-    height:50%;
+    top:185%;
+    right: 0;
+    width: 79%;
+    height:auto;
   }
-  .popUpS{
-    top:215%;
+  .popUpS img{
+    top:245%;
   }
   .exploin{
-    top:223%;
-    font-size:2.2em;
-    left:6.5%;
+    top:245%;
+    font-size:1.2em;
+    right: 25%;
   }
   .navbarB{
-    top:290%;
-    height:5%;
+    top:280%;
+    height: 60px;
   }
   .center img{
     width:7%;
@@ -808,11 +776,52 @@ margin-right:-5.3%;
    }
    .welcome{
      font-size:2.5em;
+     left: 50%;
      margin-top:12%;
    } 
    .HolyBee{
      font-size:6.75em;
    }
+
+   @keyframes move {
+    0% {  top:100.6%;left:5%;}
+    10% {  top:105%;left:5%; }
+    20% {  top:108%;left:15%; }
+    30% {  top:115%;left:33%;}
+    40% {  top:114%;left:45%;}
+    50% {  top:101%;;left:60%;}
+    60% {  top:102%;left:70%;}
+    70% {  top:116%;left:80%;}
+    80% {  top:116%;left:90%;}
+    90% {  top:116%;left:100%;}
+    100% { top:116%;left:110%;}
+  }
+  @keyframes move2{
+    0% {  top:100.6%;left:5%;}
+    10% {  top:105%;left:5%; }
+    20% {  top:108%;left:15%; }
+    30% {  top:115%;left:33%;}
+    40% {  top:114%;left:45%;}
+    50% {  top:101%;;left:60%;}
+    60% {  top:102%;left:70%;}
+    70% {  top:116%;left:80%;}
+    80% {  top:116%;left:90%;}
+    90% {  top:116%;left:100%;}
+    100% { top:116%;left:110%;}
+  }
+  @keyframes move3{
+    0% {  top:100.6%;left:5%;}
+    10% {  top:105%;left:5%; }
+    20% {  top:108%;left:15%; }
+    30% {  top:115%;left:33%;}
+    40% {  top:114%;left:45%;}
+    50% {  top:101%;;left:60%;}
+    60% {  top:102%;left:70%;}
+    70% {  top:116%;left:80%;}
+    80% {  top:116%;left:90%;}
+    90% {  top:116%;left:100%;}
+    100% { top:116%;left:110%;}
+  }
 }
 
 
